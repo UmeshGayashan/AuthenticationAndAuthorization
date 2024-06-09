@@ -1,13 +1,12 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const AtlasDB = "mongodb+srv://umeshgayashan099:Password@testing.drry1nw.mongodb.net/?retryWrites=true&w=majority&appName=Testing";
-
+const AtlasDB = "mongodb+srv://UmeshGayashan:Umesh@123@cluster0.c6vqxwa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(AtlasDB, {
-  }).then(() => {
-    console.log("Connected to database");
-  }).catch((e) => {
-    console.log(e);
-  });
+}).then(() => {
+  console.log("Connected to database");
+}).catch((e) => {
+  console.log(e);
+});
 
-  module.exports = mongoose;
+module.exports = mongoose;

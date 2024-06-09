@@ -3,6 +3,8 @@ const express = require("express");
 const signupRoute = require("./routes/signup");
 const bodyParser = require("body-parser");
 
+require("./configuration/dbConfig");
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
