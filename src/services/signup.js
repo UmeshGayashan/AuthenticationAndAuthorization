@@ -8,7 +8,7 @@ async function createUser(userData){
     const createdUser = new User({
         name,
         email,
-        hashedPassword,
+        password: hashedPassword,
         role: "customer"
     });
 
